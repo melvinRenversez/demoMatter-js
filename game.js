@@ -27,8 +27,9 @@ function preload() {
 let player;
 
 function create() {
-    player = this.matter.add.sprite(300, 300, "player")
-    player.setIgnoredByGravity(true);
+    player = this.matter.add.sprite(300, 300, "player");
+    player.setRectangle(90, 80); // largeur 50, hauteur 50
+
 }
 
 function update() {
